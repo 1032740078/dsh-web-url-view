@@ -1,0 +1,1 @@
+{"version":3,"file":"remote.js","sourceRoot":"","sources":["../../../src/client/remote.ts"],"names":[],"mappings":"AAAA;;;;;;;;GAQG;AAGH,OAAO,EAAE,wBAAwB,EAAE,MAAM,YAAY,CAAA;AAgBrD,qEAAqE;AACrE,MAAM,CAAC,MAAM,mBAAmB,GAAG,MAAM,CAAC,MAAM,CAAC;IAC/C,OAAO,EAAE,kBAAkB;IAC3B,WAAW,EAAE,wBAAwB;CACH,CAAC,CAAA"}

@@ -1,0 +1,105 @@
+/* "View URL" settings section chrome. Tokens only — the sheet follows both
+ * color schemes through the shared --dsw-alias-* surface (token reference:
+ * packages/client/ui-theme). */
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+  max-width: 620px;
+}
+
+.heading {
+  margin: 4px 0 0;
+  font-size: 1em;
+  color: var(--dsw-alias-label-primary);
+}
+
+.status {
+  margin: 0;
+  font-size: 0.9em;
+  color: var(--dsw-alias-label-secondary);
+}
+
+.errorBox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 8px 10px;
+  border: 1px solid var(--dsw-alias-state-error-secondary);
+  border-radius: 6px;
+  background: var(--dsw-alias-bg-layer-1);
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.fieldLabel {
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: var(--dsw-alias-label-primary);
+}
+
+.blockHint {
+  margin: 0;
+  font-size: 0.85em;
+  line-height: 1.5;
+  color: var(--dsw-alias-label-secondary);
+  overflow-wrap: anywhere;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+/* The URL itself: read-only text that stays selectable and wraps. */
+.url {
+  flex: 1 1 320px;
+  min-width: 0;
+  box-sizing: border-box;
+  font: inherit;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85em;
+  color: var(--dsw-alias-label-primary);
+  background: var(--dsw-alias-bg-layer-1);
+  border: 1px solid var(--dsw-alias-border-l3);
+  border-radius: 4px;
+  padding: 6px 8px;
+}
+
+.url:focus-visible {
+  outline: 2px solid var(--dsw-alias-brand-primary);
+  outline-offset: -2px;
+}
+
+.action {
+  font: inherit;
+  font-size: 0.9em;
+  cursor: pointer;
+  color: var(--dsw-alias-label-primary);
+  background: var(--dsw-alias-bg-layer-1);
+  border: 1px solid var(--dsw-alias-border-l3);
+  border-radius: 4px;
+  padding: 6px 12px;
+  white-space: nowrap;
+}
+
+.action:hover {
+  background: var(--dsw-alias-interactive-bg-hover);
+}
+
+.action:focus-visible {
+  outline: 2px solid var(--dsw-alias-brand-primary);
+  outline-offset: -2px;
+}

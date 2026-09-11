@@ -1,0 +1,80 @@
+{
+  "name": "dsh-web-url-view",
+  "description": "Settings page that shows the Web GUI access URLs, including a stable fixed address that survives restarts and is reachable from other devices on the same LAN · 设置页「查看 URL」：显示长期不变的固定访问地址，局域网内其他设备也能直接打开",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/types/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./typert": {
+      "types": "./lib/types/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "types": "./lib/types/client/index.d.ts",
+      "default": "./lib/client.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "src",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "engines": {
+    "dsh": ">=0.1.2-rc.1"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "web-ui",
+    "settings",
+    "url",
+    "lan",
+    "remote-access"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "RobinLiang",
+    "url": "https://github.com/1032740078"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1032740078/dsh-web-url-view.git"
+  },
+  "homepage": "https://github.com/1032740078/dsh-web-url-view#readme",
+  "bugs": {
+    "url": "https://github.com/1032740078/dsh-web-url-view/issues"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-typert-protocol": "^0.1.0",
+    "@deepseek-ai/dsh-api-remotes": "^0.1.0",
+    "@deepseek-ai/dsh-client-locale": "^0.1.0",
+    "@deepseek-ai/dsh-client-ui-slots": "^0.1.0",
+    "@deepseek-ai/dsh-client-ui-settings": "^0.1.0"
+  }
+}
