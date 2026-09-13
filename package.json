@@ -56,6 +56,10 @@
     "remote-access"
   ],
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
   "author": {
     "name": "RobinLiang",
     "url": "https://github.com/1032740078"
